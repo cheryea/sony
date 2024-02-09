@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+	<title>Lsh-Sony</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/inquiry.css">
+	<script src="script.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+	<link rel='stylesheet' href='https://mreq.github.io/slick-lightbox/dist/slick-lightbox.css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body id="bodys">
+
+
+
+	<header>
+
+
+		<nav class="mobile-paddings">
+
+			<div class="pc-widths flex-betweens">
+				<div onclick="searchopen()" class="nav-search-btn pc-onlys-block cursor-pointers">
+					<img
+						src="images/search-btn.svg">
+				</div>
+				<div class="cursor-pointers" onclick="location.href='/sony'" class="header-logo">
+                    <img             
+                         src="images/logo.svg">
+				</div>
+				<div onclick="navopen()" class="navopen-btn cursor-pointers">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</div>
+			</div>
+
+		</nav>
+
+
+		<div class="nav-search pc-onlys-block">
+
+			<div class="nav-search-main">
+				<div class="search-box flexs">
+					<input type="text" id="pc-navsearch" placeholder="검색어를 입력해주세요.">
+					<label for="pc-navsearch"># WH-1000XM5　#ZV-1　#ILCE-7M4</label>
+					<img
+						src="images/search-btn.svg">
+				</div>
+			</div>
+
+			<div onclick="searchclose()" class="nav-search-background">
+				<div class="flex-center">
+					<svg class="search-close cursor-pointers" xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+						fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+						<path
+							d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+					</svg>
+				</div>
+			</div>
+
+		</div>
+
+
+		<ul class="header-menus">
+		
+			<div class="cursor-pointers header-menus-close">
+				<img onclick="navclose()" src="images/close-btn.svg">
+			</div>
+		
+			<div class="header-menus-logo">
+				<img class="cursor-pointers" onclick="location.href='/sony'" src="images/logo.svg">
+			</div>
+		
+			<div class="header-menus-searchbox">
+				<div class="search-box flexs">
+					<input type="text" id="menusearch" placeholder="검색어를 입력해주세요.">
+					<label for="menusearch"># WH-1000XM5　#ZV-1　#ILCE-7M4</label>
+					<img src="images/search-btn.svg">
+				</div>
+			</div>
+		
+			<div class="header-menus-link pc-widths">
+				<li>
+					<span>기획전</span>
+					<ul>
+						<div>
+							<li onclick="location.href='/sony/purchase.html'"><span>제품구매</span></li>
+							<li onclick="location.href='/sony/event.html'"><span>이벤트</span></li>
+						</div>
+					</ul>
+				</li>
+				<li>
+					<span>멤버십</span>
+					<ul>
+						<div>
+							<li onclick="location.href='/sony/login.html'"><span>로그인</span></li>
+							<li onclick="location.href='/sony/register.html'"><span>회원가입</span></li>
+							<li onclick="location.href='/sony/unregister.html'"><span>회원탈퇴</span></li>
+						</div>
+					</ul>
+				</li>
+				<li>
+					<span>고객 서비스</span>
+					<ul>
+						<div>
+							<li onclick="location.href='/sony/notice.html'"><span>공지사항</span></li>
+							<li onclick="location.href='/sony/faq.html'"><span>FAQ</span></li>
+							<li onclick="location.href='/sony/inquiry.html'"><span>문의하기</span></li>
+						</div>
+					</ul>
+				</li>
+			</div>
+		
+		</ul>
+
+
+	</header>
+
+	<div class="notice-title">
+		<div class="notice-title-text">
+			<h1>문의하기</h1>
+			<p>소니스토어에 궁금하거나 건의하고 싶은 내용이 있다면 문의해주세요.</p>
+		</div>
+	</div>
+
+	<article class="qna-contact">
+		<h3>문의하기</h3>
+		<div>
+			<select>
+				<option value="">선택해주세요</option>
+				<option value="">제품</option>
+				<option value="">브랜드</option>
+				<option value="">이벤트</option>
+				<option value="">아이디어 제안</option>
+				<option value="">고객의 소리</option>
+				<option value="">회사일반문의</option>
+			</select>
+			<select disabled="disabled">
+				<option value="">선택해주세요</option>
+			</select>
+		</div>
+		<div>
+			<textarea placeholder="문의내용을 입력해주세요. (2000자 이내)"></textarea>
+			<div>0/2000자</div>
+			<div>
+				<label for="file">첨부파일</label>
+				<p>5MB이하의 이미지 파일(JPG, PNG, GIF)<br>
+					1개 첨부하실 수 있습니다.</p>
+			</div>
+		</div>
+		<div>
+			<p>문의에 대한 <span>답변 등록 여부</span>를 알려드립니다.</p>
+			<div>
+				<div><label><input type="checkbox">SMS</label></div>
+				<div><select>
+						<option value="">010</option>
+						<option value="">011</option>
+						<option value="">016</option>
+						<option value="">017</option>
+						<option value="">018</option>
+						<option value="">019</option>
+						<option value="">0130</option>
+						<option value="">0303</option>
+						<option value="">0502</option>
+						<option value="">0504</option>
+						<option value="">0505</option>
+						<option value="">0506</option>
+					</select>
+					<p>-</p>
+					<input type="text">
+					<p>-</p>
+					<input type="text">
+				</div>
+			</div>
+			<div>
+				<div><label><input type="checkbox">이메일</label></div>
+				<div>
+					<input type="text">
+					<select>
+						<option value="">직접입력</option>
+						<option value="" selected="">@naver.com</option>
+						<option value="">@gmail.com</option>
+						<option value="">@daum.com</option>
+						<option value="">@hanmail.com</option>
+					</select>
+				</div>
+			</div>
+			<button class="btn-brand">등록하기</button>
+		</div>
+
+	</article>
+
+  
+	<article class="contact-end">
+		<h3>문의완료</h3>
+		<div>
+			<img src="https://user-images.githubusercontent.com/112612653/189384009-5851c87e-3945-4384-8252-73943f51bfaa.png">
+		</div>
+		<strong>문의가 정상적으로 등록되었습니다.<br>
+			이용해주셔서 감사합니다.</strong>
+		<p>영업일 기준으로 3일 이내에 답변드립니다.</p>
+		<div class="flex-center">
+			<button class="btn-eee" onclick="location.href='/sony'">홈으로</button><button class="btn-eee">나의 문의 목록</button>
+		</div>
+	</article>
+
+  
+	<article class="qna-to">
+		<h3>문의 내역</h3>
+		<div>1:1 문의 내역이 <span class="text-red">3</span>건 있습니다.</div>
+		<div>
+			<details class="to-wait">
+				<summary>
+					<div>
+						<div>답변대기</div>
+						<div class="qna-to-data-title"> 배송 일정 및 배송 현황 조회는 어디서 하나요?</div>
+					</div>
+					<div>
+						<div>2022.03.28</div>
+						<div><img src="https://user-images.githubusercontent.com/112612653/189383975-fe1d621f-1941-4825-92a4-ae69d5242497.png" alt=""></div>
+					</div>
+				</summary>
+				<div>
+					<div>질문</div>
+					<p>배송 일정 및 배송 현황 조회는 어디서 하나요?</p>
+				</div>
+				<div>
+					<div>⤷답변</div>
+					<p>아직 질문에 답변이 달리지 않았습니다. 영업일 기준 3일 이내로 회신드립니다.</p>
+				</div>
+			</details>
+
+			<details>
+				<summary>
+					<div>
+						<div>답변완료</div>
+						<div class="qna-to-data-title">배송료 부담은 누가하나요?</div>
+					</div>
+					<div>
+						<div>2022.03.17</div>
+						<div><img src="https://user-images.githubusercontent.com/112612653/189383975-fe1d621f-1941-4825-92a4-ae69d5242497.png" alt=""></div>
+					</div>
+				</summary>
+				<div>
+					<div>질문</div>
+					<p>배송료 부담은 누가하나요?</p>
+				</div>
+				<div>
+					<div>⤷답변</div>
+					<p>소니스토어는 무료 배송을 원칙으로 하고 있습니다.<br>다만 산간 도서지방의 경우는 제품 특성에 따라 배송료를 부담하실 수도 있습니다.</p>
+				</div>
+			</details>
+
+			<details>
+				<summary>
+					<div>
+						<div>답변완료</div>
+						<div class="qna-to-data-title">온라인 쿠폰을 소니스토어 직영점 및 전화 주문 시에도 사용할 수 있나요?</div>
+					</div>
+					<div>
+						<div>2022.03.01</div>
+						<div><img src="https://user-images.githubusercontent.com/112612653/189383975-fe1d621f-1941-4825-92a4-ae69d5242497.png" alt=""></div>
+					</div>
+				</summary>
+				<div>
+					<div>질문</div>
+					<p>온라인 쿠폰을 소니스토어 직영점 및 전화 주문 시에도 사용할 수 있나요?</p>
+				</div>
+				<div>
+					<div>⤷답변</div>
+					<p>소니스토어 매장 방문 시 출력된 쿠폰을 지참하시면 사용하실 수 있습니다.<br>
+						전화주문 시에는 쿠폰 번호를 알려주시면 결제 시 적용 받으실 수 있습니다.</p>
+				</div>
+			</details>
+		</div>
+	</article>
+
+
+	<footer>
+
+
+		<div class="pc-widths">
+
+			<div>
+				<div class="pc-onlys-flex flex-betweens">
+					<div><img class="cursor-pointers"
+						onclick="location.href='/sony'" src="images/logo.svg">
+					</div>
+					<div class="footer-site">
+						<div id="siteclicker" onclick="showfootersite()" class="flex-betweens">
+							<p>Family Site</p>
+							<p>▲</p>
+						</div>
+						<ul id="sitelist">
+							<li>소니코리아</li>
+							<li>소니코리아 고객지원</li>
+							<li>소니 알파 α</li>
+							<li>소니 방송/업무용 솔루션</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="footer-mobile-top padding-side">
+					<li>위치기반</li>
+					<li>서비스</li>
+					<li>이용약관</li>
+					<li class="font-bolds color-fff">개인정보처리방침</li>
+				</ul>
+				<div class="footer-main">
+					<ul class="footer-mobile-main-name padding-side mobile-onlys">
+						<li>상호명 : 소니코리아㈜　대표이사 : Okura Kikuo</li>
+						<li>주소 : 서울특별시 국제금융로 10 원아이에프씨 24F</li>
+						<li>사업자등록번호 : 106-81-23810</li>
+						<li>Copyright © Sony Korea Corporation. All rights reserved.</li>
+					</ul>
+					<ul class="footer-pc-main-name pc-onlys-block">
+						<li>상호명 : 소니코리아㈜　대표이사 : Okura Kikuo</li>
+						<li>주소 : 서울특별시 국제금융로 10 원아이에프씨 24F | 사업자등록번호 : 106-81-23810</li>
+						<li>Copyright © Sony Korea Corporation. All rights reserved.</li>
+					</ul>
+					<ul class="footer-main-call">
+						<div class="padding-side">
+							<li>
+								<p>대표전화</p>
+								<span>1588-0911</span>
+							</li>
+							<li>
+								<p>PlayStation 고객센터</p>
+								<span>1599-8500</span>
+							</li>
+							<li>
+								<p>E-MAIL</p>
+								<span>cshelp@sony.co.kr</span>
+							</li>
+							<li>
+								<p>해외 전화</p>
+								<span>+82-2-6420-3333</span>
+							</li>
+						</div>
+						<div class="padding-side mobile-onlys">
+							일요일, 공휴일 휴무 <br>
+							평일 09시 - 18시 / 토요일 09시 - 13시<br>
+							고객센터(콜센터) 이용시 통신요금이 부과됩니다.
+						</div>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-pc-bottom pc-onlys-flex flex-betweens">
+				<ul class="flex-betweens">
+					<li>위치기반</li>
+					<li>서비스</li>
+					<li>이용약관</li>
+					<li>개인정보처리방침</li>
+					<li>전자민원접수</li>
+					<li>경영공시</li>
+					<li>공지사항</li>
+				</ul>
+				<ul class="footer-bottom-sns pc-onlys-flex">
+					<li>
+						<p>SNS</p>
+					</li>
+					<li><img
+							src="images/sns-youtube.png">
+					</li>
+					<li><img
+							src="images/sns-blog.png">
+					</li>
+					<li><img
+							src="images/sns-instagram.png">
+					</li>
+					<li><img
+							src="images/sns-facebook.png">
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+
+	</footer>
+
+
+	<aside class="pc-onlys-block">
+		<div></div>
+		<ul>
+			<li class="aside-open">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+					class="bi bi-chevron-down" viewBox="0 0 16 16">
+					<path fill-rule="evenodd"
+						d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+				</svg>
+			</li>
+			<li class="aside-top cursor-pointers" onclick="location.href='/sony'">
+				<div>
+					<img
+						src="images/logo-aside.png">
+				</div>
+				<a>소니 스토어</a>
+			</li>
+			<li class="cursor-pointers" onclick="location.href='/sony/login.html'">
+				<svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-person"
+					viewBox="0 0 16 16">
+					<path
+						d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+				</svg>
+				</svg><br>
+				<a>로그인</a>
+			</li>
+			<li class="cursor-pointers" onclick="location.href='/sony/inquiry.html'">
+				<svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-pencil-square"
+					viewBox="0 0 16 16">
+					<path
+						d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+					<path fill-rule="evenodd"
+						d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+				</svg><br>
+				<a>문의하기</a>
+			</li>
+			<li class="cursor-pointers" onclick="location.href='/sony/faq.html'">
+				<svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16"> <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/> </svg><br>
+				<a>FAQ</a>
+			</li>
+			<li class="aside-close"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+					class="bi bi-chevron-up" viewBox="0 0 16 16">
+					<path fill-rule="evenodd"
+						d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+				</svg>
+			</li>
+		</ul>
+		<div class="aside-recent">
+			<div class="cursor-pointers" onclick="location.href='/sony/purchase.html'">
+				<a>최근 본 제품</a>
+				<div>
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+						class="bi bi-cart-dash" viewBox="0 0 16 16">
+						<path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+						<path
+							d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div class="aside-topbtn cursor-pointers" onclick="scrollToTop()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
+				class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+				<path fill-rule="evenodd"
+					d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+			</svg>
+		</div>
+	</aside>
+
+
+
+	<script>
+		AOS.init();
+	</script>
+
+
+
+</body>
+
+
+
+</html>

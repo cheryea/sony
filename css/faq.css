@@ -1,0 +1,255 @@
+.notice {
+  padding-bottom: 150px;
+  margin-top: 70px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.notice .notice-title {
+  text-align: center;
+  background: #f4f7fa;
+  padding: 120px 20px 60px 20px;
+  margin-top: 70px;
+  border-bottom: 2px solid #eee;
+}
+
+.notice .notice-title-text p {
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5rem;
+  word-break: keep-all;
+}
+
+.notice .notice-tab {
+  display: flex;
+  justify-content: center;
+  background: #f4f7fa;
+}
+
+.notice .notice-tab div {
+  width: 110px;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #bbb;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.notice .notice-tab div:hover {
+  background: #5865f5;
+  color: #fff;
+}
+
+.notice .notice-tab .tabpick {
+  position: relative;
+  background: #5865f5;
+  color: #fff;
+}
+
+.notice .notice-tab .tabpick::after {
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  right: 18px;
+  width: 0;
+  height: 0;
+  border-color: #5865f5 transparent transparent;
+  border-style: solid;
+  border-width: 15px 13px 0;
+  transition: all .2s;
+  content: "";
+}
+
+.notice-tab-main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.notice .faq-main ul,
+.notice .notice-main ul {
+  margin-top: 60px;
+  border-top: 1px solid #ddd;
+}
+
+.notice .faq-main li,
+.notice .notice-main ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.notice .faq-main li:hover,
+.notice .notice-main ul li:not(:first-child):hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.notice .notice-main ul li:not(:first-child).active {
+  background: #eee;
+}
+
+.notice .faq-main li svg {
+  transform: rotate(180deg);
+}
+
+.notice .faq-main li.active svg {
+  transform: rotate(0deg);
+}
+
+.notice .faq-main li.active,
+.notice .notice-main li:not(:first-child).active {
+  background: #eee;
+}
+
+.notice .faq-main ul div,
+.notice .notice-main ul>div {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s;
+  font-size: 14px;
+  color: #666;
+  border-bottom: 1px solid #ddd;
+  background: #fbfbfb;
+}
+
+.notice .faq-main ul div p {
+  padding: 20px;
+}
+
+.notice .notice-main {
+  position: relative;
+}
+
+.notice-main-shortcut {
+  position: absolute;
+  top: -25px;
+  right: 20px;
+  color: #333;
+}
+
+.notice .notice-main li:first-child {
+  border-bottom: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+.notice .notice-main-number,
+.notice-main-hits {
+  display: none;
+}
+
+.notice .notice-main li p {
+  width: calc(100% - 88px);
+  text-align: center;
+  margin-right: 8px;
+  word-break: keep-all;
+}
+
+.notice .notice-main li:not(:first-child) p {
+  text-align: left;
+}
+
+.notice .notice-main-date {
+  width: 80px;
+  text-align: center;
+  color: #888;
+}
+
+.notice .notice-main ul>div p {
+  max-height: 100px;
+  overflow: hidden;
+  margin: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+/* end */
+@media screen and (min-width: 1366px) {
+  .notice .faq-main,
+  .notice .notice-main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .notice .notice-tab div {
+    width: 250px;
+    height: 150px;
+    margin-right: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .notice .notice-tab .tabpick::after {
+    bottom: -20px;
+    right: 28px;
+    border-width: 20px 18px 0;
+  }
+
+  .notice .faq-main li {
+    padding: 25px 20px;
+  }
+
+  .notice .faq-main li span {
+    color: #888;
+    width: 180px;
+    text-align: center;
+  }
+
+  .notice .faq-main li p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+
+  .notice .faq-main ul div p {
+    padding: 26px 32px 25px 180px;
+  }
+
+  .notice .notice-main ul li {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .notice .notice-main-number,
+  .notice-main-hits {
+    display: flex;
+  }
+
+  .notice .notice-main-number {
+    width: 10%;
+    max-width: 120px;
+    padding: 21px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .notice .notice-main li p {
+    width: 70%;
+    padding: 21px 0;
+    margin-right: 0;
+  }
+
+  .notice .notice-main-date {
+    width: 18.5%;
+    padding: 21px 0;
+  }
+
+  .notice .notice-main-hits {
+    width: 11.5%;
+    padding: 21px 0;
+    display: flex;
+    justify-content: center;
+    color: #888;
+  }
+
+  .notice .notice-main ul>div p {
+    margin: 20px 20px 20px 120px;
+  }
+}

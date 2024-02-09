@@ -1,0 +1,156 @@
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px;
+}
+
+.logtext {
+  text-align: center;
+  background: #f4f7fa;
+  padding: 120px 20px 60px 20px;
+  margin-top: 70px;
+  border-bottom: 2px solid #eee;
+}
+
+.logtext p {
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5rem;
+  word-break: keep-all;
+}
+
+article {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  text-align: center;
+  margin: 60px 20px;
+  padding: 60px 20px;
+}
+
+.log input {
+  width: 100%;
+  font-size: 16px;
+  height: 50px;
+  border: 1px solid #ddd;
+  outline: none;
+  padding-left: 12px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.log input::placeholder {
+  color: #ccc;
+}
+
+.log input:focus {
+  border: 1px solid #444;
+}
+
+.log button {
+  font-family: 'Noto Sans Kr', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  background: #fff;
+  height: 60px;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.log button p {
+  display: inline;
+  vertical-align: 5px;
+}
+
+.log button>img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.input-chek:checked+.form-chek {
+  font-weight: bold;
+}
+
+.log>div:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.log>div:nth-child(1)>p {
+  color: #888;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.log>div:nth-child(2) {
+  display: flex;
+  height: 20px;
+  justify-content: space-between;
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.log>div:nth-child(2) input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: -4px;
+}
+
+.log>div:nth-child(2)>div:nth-child(2) {
+  display: flex;
+}
+
+.log>div:nth-child(2)>div:nth-child(2)>p {
+  margin: 0 5px;
+  font-size: 13px;
+  line-height: 1.2rem;
+  cursor: pointer;
+}
+
+.log>div:nth-child(2)>div:nth-child(2)>p:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.log>div:nth-child(3)>button:nth-child(1) {
+  background: #5865f5;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.log>div:nth-child(3)>button:nth-child(1):hover {
+  background: #000;
+}
+
+.log>div:nth-child(3) {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.log>div:nth-child(4) {
+  padding-top: 30px;
+}
+
+.log>div:nth-child(4)>p {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.log>div:nth-child(4) button {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+@media screen and (min-width: 1366px) {
+  article {
+    width: 600px;
+    margin: 60px auto 120px;
+    padding: 60px 30px;
+  }
+}

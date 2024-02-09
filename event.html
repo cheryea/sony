@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+	<title>Lsh-Sony</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/event.css">
+	<script src="script.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+	<link rel='stylesheet' href='https://mreq.github.io/slick-lightbox/dist/slick-lightbox.css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body id="bodys">
+
+
+
+	<header>
+
+
+		<nav class="mobile-paddings">
+
+			<div class="pc-widths flex-betweens">
+				<div onclick="searchopen()" class="nav-search-btn pc-onlys-block cursor-pointers">
+					<img
+						src="images/search-btn.svg">
+				</div>
+				<div class="cursor-pointers" onclick="location.href='/sony'" class="header-logo">
+                    <img             
+                         src="images/logo.svg">
+				</div>
+				<div onclick="navopen()" class="navopen-btn cursor-pointers">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</div>
+			</div>
+
+		</nav>
+
+
+		<div class="nav-search pc-onlys-block">
+
+			<div class="nav-search-main">
+				<div class="search-box flexs">
+					<input type="text" id="pc-navsearch" placeholder="검색어를 입력해주세요.">
+					<label for="pc-navsearch"># WH-1000XM5　#ZV-1　#ILCE-7M4</label>
+					<img
+						src="images/search-btn.svg">
+				</div>
+			</div>
+
+			<div onclick="searchclose()" class="nav-search-background">
+				<div class="flex-center">
+					<svg class="search-close cursor-pointers" xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+						fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+						<path
+							d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+					</svg>
+				</div>
+			</div>
+
+		</div>
+
+
+		<ul class="header-menus">
+		
+			<div class="cursor-pointers header-menus-close">
+				<img onclick="navclose()" src="images/close-btn.svg">
+			</div>
+		
+			<div class="header-menus-logo">
+				<img class="cursor-pointers" onclick="location.href='/sony'" src="images/logo.svg">
+			</div>
+		
+			<div class="header-menus-searchbox">
+				<div class="search-box flexs">
+					<input type="text" id="menusearch" placeholder="검색어를 입력해주세요.">
+					<label for="menusearch"># WH-1000XM5　#ZV-1　#ILCE-7M4</label>
+					<img src="images/search-btn.svg">
+				</div>
+			</div>
+		
+			<div class="header-menus-link pc-widths">
+				<li>
+					<span>기획전</span>
+					<ul>
+						<div>
+							<li onclick="location.href='/sony/purchase.html'"><span>제품구매</span></li>
+							<li onclick="location.href='/sony/event.html'"><span>이벤트</span></li>
+						</div>
+					</ul>
+				</li>
+				<li>
+					<span>멤버십</span>
+					<ul>
+						<div>
+							<li onclick="location.href='/sony/login.html'"><span>로그인</span></li>
+							<li onclick="location.href='/sony/register.html'"><span>회원가입</span></li>
+							<li onclick="location.href='/sony/unregister.html'"><span>회원탈퇴</span></li>
+						</div>
+					</ul>
+				</li>
+				<li>
+					<span>고객 서비스</span>
+					<ul>
+						<div>
+							<li onclick="location.href='/sony/notice.html'"><span>공지사항</span></li>
+							<li onclick="location.href='/sony/faq.html'"><span>FAQ</span></li>
+							<li onclick="location.href='/sony/inquiry.html'"><span>문의하기</span></li>
+						</div>
+					</ul>
+				</li>
+			</div>
+		
+		</ul>
+
+
+	</header>
+
+
+	<div class="news-title">
+
+		<h1>이벤트</h1>
+
+		<p>
+			소니스토어 단독으로 진행되는 기획전에 참여해보세요!</p>
+
+	</div>
+
+
+	<article class="news-list list">
+		<div>
+			<p>총 <span class="text-red">312</span> 건</p>
+			<div>
+				<select>
+					<option value="">전체</option>
+					<option value="">제목</option>
+					<option value="">내용</option>
+				</select>
+				<div>
+					<input type="text" placeholder="검색어를 입력하세요.">
+					<img src="https://user-images.githubusercontent.com/112612653/189786656-23ffe45f-38ec-4ff3-b1da-a04e66404a99.png">
+				</div>
+			</div>
+		</div>
+		<section>
+			<div>
+				<img src="https://user-images.githubusercontent.com/112612653/203210483-e689071a-0fd4-4b22-888d-19baaeca5880.jpg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>WH-1000XM5 겨울 프로모션 진행</h3>
+				<p>소니코리아가 글로벌 헤드웨어 브랜드 뉴에라캡코리아와 함께 11월 21일(월)부터 2023년 1월 15일(일)까지 헤드폰의 계절, 겨울을 맞이해 ‘겨울의 완성 WH-1000XM5’ 프로모션을 진행합니다. 추운 겨울이 다가오면서 헤드폰을 비니와 함께 매치해 추위와 패션을 모두 고려한 패션 스타일이 인기를 끌면서, 소니코리아는 이러한 트렌드를 반영해 뉴에라와의 협업을 통해 이번 겨울 프로모션을 기획하였습니다. 자세한 내용은 아래에서 확인하실 수 있습니다.
+				“헤드폰의 계절 겨울, WH-1000XM5로 완성하다”
+				소니코리아, 뉴에라와 함께 WH-1000XM5 겨울 프로모션 진행</p>
+				<small>2022-11-21 ~ 2022-12-18</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="https://user-images.githubusercontent.com/112612653/203210488-3dff8ea0-3062-4899-bd5b-e30930cfe6bf.jpg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>‘FX30’ 국내 출시 및 예약 판매 진행</h3>
+				<p>소니코리아가 영상 제작자를 위한 새로운 시네마 라인 ‘FX30’의 국내 출시에 앞서, 10월 12일(수) 오후 7시에 네이버 쇼핑 라이브를 통해 예약 판매를 진행합니다. 자세한 내용은 아래에서 확인하실 수 있습니다. “시네마틱 영상으로의 초대” 소니코리아, 4K Super 35mm 컴팩트 시네마 라인 ‘FX30’ 국내 출시 및 예약 판매 진행 - 4K Super 35mm 컴팩트 시네마 라인 ‘FX30’ 출시 - 영상 입문자부터 전문가까지, 영상 크리에이터를 위한 시네마틱한 표현력과 시네마 라인만의 다양한 기능 지원
+				- 10월 12일(수) 오후 7시, 네이버 쇼핑 라이브 통해 ‘FX30’ 출시 기념 예약판매 실시</p>
+				<small>2022-10-12</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="https://user-images.githubusercontent.com/112612653/203210478-7be9ff29-a7db-4a00-a55a-daa30cf857f3.jpg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>‘2022 월드 오브 필름’ 캠페인 개최</h3>
+				<p>소니코리아가 12월 31일(토)까지 ‘2022 월드 오브 필름(World of Film)’ 캠페인을 진행합니다. 작년에 이어 두 번째로 개최되는 ‘월드 오브 필름’ 캠페인은 소니 알파 시리즈 렌즈 교환식 카메라와 시네마 라인 카메라를 통해 다양한 영화 제작자들에게 무한한 잠재력 달성 지원 및 창의적인 작품 활동의 기회를 제공합니다. 자세한 내용은 아래에서 확인하실 수 있습니다. 영화 제작의 무한한 잠재력을 꿈꾸다! 소니코리아, ‘2022 월드 오브 필름(World of Film)’ 캠페인 개최- 영화 제작자들의 무한한 잠재력 달성 지원 및 창의적인 작품 활동 기회 제공</p>
+				<small>2022-10-06</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="https://user-images.githubusercontent.com/112612653/189786694-390af0ea-642e-4da4-a3e1-1d4d49cb92a0.jpg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>대용량 CFexpress Type A 메모리 카드 2종 국내 출시 및 예약 판매 진행</h3>
+				<p>소니코리아가 영상 전문가를 위한 대용량 CFexpress Type A 메모리 카드 2종 CEA-G320T(320GB) 및 CEA-G640T(640GB)의 국내 출시에 앞서 예약 판매를 진행합니다. 자세한 내용은 아래에서 확인하실 수 있습니다. 영상 전문가를 위한 컴팩트 대용량 메모리 카드 소니코리아, 대용량 CFexpress Type A 메모리 카드 2종 국내 출시 및 예약 판매 진행 - 대용량 CFexpress Type A 메모리 카드 2종 CEA-G320T(320GB), CEA-G640T(640GB) 국내 출시기념 예약 판매 실시
+				- 최대 700MB/s의 쓰기 속도와 VPG 400의 고속 성능 지원</p>
+				<small>2022-09-29</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="https://user-images.githubusercontent.com/112612653/203210482-0efe7757-cf52-4d58-9e44-fe252375c021.jpg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>무선 노이즈 캔슬링 게이밍 헤드셋 'INZONE H9' 정품등록 프로모션 진행</h3>
+				<p>소니코리아가 9월 28일(수)부터 10월 25일(화)까지 소니의 게이밍 전용 기어 브랜드 INZONE(인존, 이하 INZONE)의 무선 노이즈 캔슬링 게이밍 헤드셋 ‘INZONE H9’ 구매 고객을 대상으로 정품등록 이벤트를 진행합니다.
+				이번 정품등록 이벤트는 소니의 강력한 하이엔드 오디오 기술을 탑재한 무선 노이즈 캔슬링 게이밍 헤드셋 ‘INZONE H9’으로 게이머들이 보다 몰입감 넘치는 게임 플레이를 즐길 수 있도록 기획됐습니다.
+				자세한 내용은 아래에서 확인하실 수 있습니다.완벽한 몰입을 경험하다. 소니코리아, 무선 노이즈 캔슬링 게이밍 헤드셋 ‘INZONE H9’정품등록 프로모션 진행</p>
+				<small>2022-09-28 ~ 2022-10-25</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="https://user-images.githubusercontent.com/112612653/203213667-241453a4-30d0-401e-b8d4-87379b99d162.jpg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>G Master 및 G 렌즈 정품등록 프로모션 진행</h3>
+				<p>소니코리아가 가을 출사 시즌을 맞이해 9월 23일(금)부터 11월 23일(수)까지 소니의 프리미엄 렌즈 브랜드G Master 및 G 렌즈 중 6종(SEL70200GM, SEL2470GM, SEL1635GM, SEL24F14GM, SEL90M28G, SEL24105G)의 구매 고객을 대상으로 정품등록 이벤트를 진행합니다. 자세한 내용은 아래에서 확인하실 수 있습니다. 가을, 풍경을 담다 소니코리아, G Master 및 G 렌즈 정품등록 프로모션 진행 - 9월 23일(금)부터 11월 23일(수)까지 G Master 및 G 렌즈 6종 정품등록 프로모션 실시 - 행사 기간 내 제품 구매 후 정품등록 및 사은품 신청 시, 가을 출사를 위한 특별</p>
+				<small>2022-09-23 ~ 2022-11-23</small>
+			</div>
+		</section>
+		<div class="page">
+			<p class="checkpage">1</p>
+			<p>2</p>
+			<p>3</p>
+			<p>4</p>
+			<p>5</p>
+		</div>
+	</article>
+
+
+	<footer>
+
+
+		<div class="pc-widths">
+
+			<div>
+				<div class="pc-onlys-flex flex-betweens">
+					<div><img class="cursor-pointers"
+						onclick="location.href='/sony'" src="images/logo.svg">
+					</div>
+					<div class="footer-site">
+						<div id="siteclicker" onclick="showfootersite()" class="flex-betweens">
+							<p>Family Site</p>
+							<p>▲</p>
+						</div>
+						<ul id="sitelist">
+							<li>소니코리아</li>
+							<li>소니코리아 고객지원</li>
+							<li>소니 알파 α</li>
+							<li>소니 방송/업무용 솔루션</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="footer-mobile-top padding-side">
+					<li>위치기반</li>
+					<li>서비스</li>
+					<li>이용약관</li>
+					<li class="font-bolds color-fff">개인정보처리방침</li>
+				</ul>
+				<div class="footer-main">
+					<ul class="footer-mobile-main-name padding-side mobile-onlys">
+						<li>상호명 : 소니코리아㈜　대표이사 : Okura Kikuo</li>
+						<li>주소 : 서울특별시 국제금융로 10 원아이에프씨 24F</li>
+						<li>사업자등록번호 : 106-81-23810</li>
+						<li>Copyright © Sony Korea Corporation. All rights reserved.</li>
+					</ul>
+					<ul class="footer-pc-main-name pc-onlys-block">
+						<li>상호명 : 소니코리아㈜　대표이사 : Okura Kikuo</li>
+						<li>주소 : 서울특별시 국제금융로 10 원아이에프씨 24F | 사업자등록번호 : 106-81-23810</li>
+						<li>Copyright © Sony Korea Corporation. All rights reserved.</li>
+					</ul>
+					<ul class="footer-main-call">
+						<div class="padding-side">
+							<li>
+								<p>대표전화</p>
+								<span>1588-0911</span>
+							</li>
+							<li>
+								<p>PlayStation 고객센터</p>
+								<span>1599-8500</span>
+							</li>
+							<li>
+								<p>E-MAIL</p>
+								<span>cshelp@sony.co.kr</span>
+							</li>
+							<li>
+								<p>해외 전화</p>
+								<span>+82-2-6420-3333</span>
+							</li>
+						</div>
+						<div class="padding-side mobile-onlys">
+							일요일, 공휴일 휴무 <br>
+							평일 09시 - 18시 / 토요일 09시 - 13시<br>
+							고객센터(콜센터) 이용시 통신요금이 부과됩니다.
+						</div>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-pc-bottom pc-onlys-flex flex-betweens">
+				<ul class="flex-betweens">
+					<li>위치기반</li>
+					<li>서비스</li>
+					<li>이용약관</li>
+					<li>개인정보처리방침</li>
+					<li>전자민원접수</li>
+					<li>경영공시</li>
+					<li>공지사항</li>
+				</ul>
+				<ul class="footer-bottom-sns pc-onlys-flex">
+					<li>
+						<p>SNS</p>
+					</li>
+					<li><img
+							src="images/sns-youtube.png">
+					</li>
+					<li><img
+							src="images/sns-blog.png">
+					</li>
+					<li><img
+							src="images/sns-instagram.png">
+					</li>
+					<li><img
+							src="images/sns-facebook.png">
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+
+	</footer>
+
+	
+
+	<aside class="pc-onlys-block">
+		<div></div>
+		<ul>
+			<li class="aside-open">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+					class="bi bi-chevron-down" viewBox="0 0 16 16">
+					<path fill-rule="evenodd"
+						d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+				</svg>
+			</li>
+			<li class="aside-top cursor-pointers" onclick="location.href='/sony'">
+				<div>
+					<img
+						src="images/logo-aside.png">
+				</div>
+				<a>소니 스토어</a>
+			</li>
+			<li class="cursor-pointers" onclick="location.href='/sony/login.html'">
+				<svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-person"
+					viewBox="0 0 16 16">
+					<path
+						d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+				</svg>
+				</svg><br>
+				<a>로그인</a>
+			</li>
+			<li class="cursor-pointers" onclick="location.href='/sony/inquiry.html'">
+				<svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-pencil-square"
+					viewBox="0 0 16 16">
+					<path
+						d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+					<path fill-rule="evenodd"
+						d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+				</svg><br>
+				<a>문의하기</a>
+			</li>
+			<li class="cursor-pointers" onclick="location.href='/sony/faq.html'">
+				<svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16"> <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/> </svg><br>
+				<a>FAQ</a>
+			</li>
+			<li class="aside-close"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+					class="bi bi-chevron-up" viewBox="0 0 16 16">
+					<path fill-rule="evenodd"
+						d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+				</svg>
+			</li>
+		</ul>
+		<div class="aside-recent">
+			<div class="cursor-pointers" onclick="location.href='/sony/purchase.html'">
+				<a>최근 본 제품</a>
+				<div>
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+						class="bi bi-cart-dash" viewBox="0 0 16 16">
+						<path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+						<path
+							d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div class="aside-topbtn cursor-pointers" onclick="scrollToTop()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
+				class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+				<path fill-rule="evenodd"
+					d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+			</svg>
+		</div>
+	</aside>
+
+
+
+	<script>
+		AOS.init();
+	</script>
+
+
+
+</body>
+
+
+
+</html>

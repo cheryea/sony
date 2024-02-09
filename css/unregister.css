@@ -1,0 +1,177 @@
+
+.removetext {
+  text-align: center;
+  background: #f4f7fa;
+  padding: 120px 20px 60px 20px;
+  margin-top: 70px;
+  border-bottom: 2px solid #eee;
+}
+
+.removetext p {
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5rem;
+  word-break: keep-all;
+}
+
+article {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  text-align: center;
+  margin: 60px 20px;
+  padding: 60px 20px;
+}
+
+button {
+  font-family: 'Noto Sans Kr', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  background: #444;
+  border: 1px solid #ddd;
+  width: 100%;
+  height: 60px;
+  margin: 40px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #000;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px;
+}
+
+.remove button p {
+  display: inline;
+  vertical-align: 5px;
+}
+
+.remove h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.remove p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.remove span {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2rem;
+  color: #222;
+}
+
+.review button p {
+  display: inline;
+  vertical-align: 5px;
+}
+
+.review>div:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+.review>div:nth-child(1)>h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.review>div:nth-child(1)>p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6rem;
+}
+
+.review>div:nth-child(2),
+.review>div:nth-child(3) {
+  text-align: left;
+}
+
+.review>div:nth-child(2)>p,
+.review>div:nth-child(3)>p {
+  color: #666;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.review>div:nth-child(2)>select {
+  color: #666;
+  font-size: 13px;
+  padding-left: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.review>div:nth-child(2)>select:focus {
+  outline: 2px solid black;
+}
+
+.review>div:nth-child(3)>textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none;
+}
+
+.review>div:nth-child(3)>textarea:focus {
+  outline: 2px solid black;
+}
+
+.review>div:nth-child(3)>textarea::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.removeend button p {
+  display: inline;
+  vertical-align: 5px;
+}
+
+.removeend h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.removeend img {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.removeend strong {
+  font-size: 22px;
+  line-height: 2rem;
+  font-weight: 300;
+  word-break: keep-all;
+}
+
+.removeend p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1366px) {
+  article {
+    width: 600px;
+    margin: 60px auto 120px;
+    padding: 60px 30px;
+  }
+}

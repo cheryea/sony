@@ -1,0 +1,408 @@
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px;
+}
+
+.weljoin {
+  text-align: center;
+  background: #f4f7fa;
+  padding: 120px 20px 60px 20px;
+  margin-top: 70px;
+  border-bottom: 2px solid #eee;
+}
+
+.weljoin p {
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5rem;
+  word-break: keep-all;
+}
+
+article {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  text-align: center;
+  margin: 60px 20px;
+  padding: 60px 20px;
+}
+
+.signup input {
+  width: 100%;
+  font-size: 16px;
+  height: 50px;
+  border: 1px solid #ddd;
+  outline: none;
+  padding-left: 12px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.signup input::placeholder {
+  color: #ccc;
+}
+
+.signup input:focus {
+  border: 1px solid #444;
+}
+
+input[type=checkbox] {
+  width: 14px;
+  height: 14px;
+}
+
+.signup button {
+  font-family: 'Noto Sans Kr', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  background: #fff;
+  height: 60px;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup button:hover {
+  background: black;
+}
+
+.signup button p {
+  display: inline;
+  vertical-align: 5px;
+}
+
+.signup p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.signup p>span {
+  color: red;
+}
+
+.signup>div:nth-child(n+4):nth-child(-n+10)>p {
+  text-align: left;
+}
+
+.signup h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.signup>div {
+  margin-bottom: 20px
+}
+
+.signup>div:nth-child(2)>div,
+.signup>div:nth-child(7)>div {
+  display: flex;
+}
+
+.signup>div:nth-child(2)>div>input {
+  width: 95%;
+}
+
+.signup>div:nth-child(2)>div>button:hover {
+  background: #000;
+}
+
+.signup>div:nth-child(2)>div>button {
+  width: 5%;
+  min-width: 80px;
+  height: 50px;
+  font-size: 16px;
+  margin-left: 8px;
+  border: 1px solid #ddd;
+  color: #fff;
+  background: #444;
+  transition: 0.3s;
+}
+
+.signup>div:nth-child(7)>div>input {
+  width: 90%;
+}
+
+.signup>div:nth-child(7)>div>button {
+  width: 10%;
+  min-width: 120px;
+  height: 50px;
+  font-size: 16px;
+  margin-left: 8px;
+  border: 1px solid #ddd;
+  color: #fff;
+  background: #444;
+  transition: 0.3s;
+}
+
+.signup>div:nth-child(7)>div>button:hover {
+  background: #000;
+}
+
+.signup>div:nth-child(8) {
+  margin-bottom: 28px;
+}
+
+.signup>div:nth-child(8)>div:nth-child(2) {
+  position: relative;
+  display: flex;
+  color: #ddd;
+  line-height: 3rem;
+  background: #fff;
+  height: 50px;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 4px;
+  padding-left: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup>div:nth-child(8)>div:nth-child(2):hover {
+  background: #eee;
+}
+
+.signup>div:nth-child(8)>div:nth-child(2)>p {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.signup>div:nth-child(8)>div:nth-child(2)>img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  right: 10px;
+}
+
+.signup>div:nth-child(9) {
+  margin-bottom: 40px;
+}
+
+.signup>div:nth-child(9)>div {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  padding: 0 8px;
+  margin-bottom: 8px;
+  line-height: 3rem;
+}
+
+.signup>div:nth-child(9) input {
+  width: 32%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.signup>div:nth-child(9) span {
+  color: #ddd;
+}
+
+.signup-agreediv {
+  margin-bottom: 0;
+}
+
+.signup-agreediv>p {
+  margin-bottom: 20px;
+}
+
+.signup-agreediv .signup-agreediv-agreealldiv {
+  text-align: left;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+.signup-agreediv input[type="checkbox"] {
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+
+.signup-agreediv>div:nth-child(3) span {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.signup-agreediv>div:nth-child(3) span:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-agreediv>div:nth-child(3) button {
+  background: #5865f5;
+  margin-bottom: 0;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.signup-agreediv>div:nth-child(3) button:hover {
+  background: #000;
+}
+
+.signup-agreediv>div:nth-child(3)>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-agreediv>div:nth-child(3)>div>div {
+  display: flex;
+  font-size: 12px;
+}
+
+.signup-agreediv>div:nth-child(3)>div:nth-child(3) {
+  margin-bottom: 40px;
+}
+
+.signup-agreediv>div:nth-child(3)>div>div>p {
+  line-height: 1.3rem;
+  color: #999;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+
+.agree button {
+  font-family: 'Noto Sans Kr', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  background: #fff;
+  height: 60px;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.agree button p {
+  display: inline;
+  vertical-align: 5px;
+}
+
+.agree>div>h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.agree>div>div {
+  height: 300px;
+  overflow-y: scroll;
+  background: #eee;
+  padding: 16px;
+  margin-bottom: 32px;
+  line-height: 1.4rem;
+}
+
+.agree>div>p {
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.agree>div>button:nth-child(4) {
+  color: #fff;
+  background: #444;
+  margin-bottom: 10px;
+}
+
+.agree>div>button:nth-child(4):hover {
+  background-color: black;
+}
+
+.signupend button {
+  font-family: 'Noto Sans Kr', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  background: #fff;
+  height: 60px;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signupend button p {
+  display: inline;
+  vertical-align: 5px;
+}
+
+.signupend>h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 64px;
+}
+
+.signupend strong {
+  font-size: 22px;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+.signupend p {
+  font-size: 16px;
+  line-height: 1.6rem;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+.signupend>div {
+  display: flex;
+}
+
+.signupend>div>button:nth-child(1) {
+  color: #fff;
+  background: #444;
+  margin-right: 3vw;
+}
+
+.signupend>div>button:nth-child(2) {
+  background: #5865f5;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.signupend>div>button:hover {
+  background: black;
+}
+
+@media screen and (min-width: 1366px) {
+  article {
+    width: 600px;
+    margin: 60px auto 120px;
+    padding: 60px 30px;
+  }
+  .signup-agreediv>div:nth-child(3)>div>div {
+  display: flex;
+  font-size: 15px;
+  }
+  .signup p {
+    font-size: 15px;
+  }
+  input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+  }
+  .signup-agreediv input[type="checkbox"] {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    vertical-align: -6px;
+  }
+  
+}
