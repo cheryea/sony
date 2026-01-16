@@ -1,3 +1,5 @@
+https://cheryea.github.io/sony/
+
 ## **👨‍🏫 프로젝트 소개**
 
 소니 웹사이트를 **모바일 퍼스트(Mobile-First)** 전략으로 리뉴얼한 반응형 웹페이지 프로젝트입니다. 
